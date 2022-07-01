@@ -19,5 +19,3 @@ fi
 [ ! -d ${DESTDIR}/${PREFOX}/local/bin ] && install -dm755 ${DESTDIR}/${PREFIX}/local/bin
 install -m755 out/javafetch ${DESTDIR}/${PREFIX}/local/bin/javafetch
 echo "javafetch has been installed to ${DESTDIR}/${PREFIX}/local/bin/javafetch"
-
-javafetch
