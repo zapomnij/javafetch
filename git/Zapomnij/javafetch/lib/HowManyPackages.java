@@ -7,6 +7,12 @@ public class HowManyPackages {
         return Long.parseLong(output);
     }
 
+    private static long dpkg() throws Exception {
+        String output = GetOutput.getOutput("dpkg -l | grep -c '^ii'");
+
+        return Long.parseLong(output);
+    }
+
     public static long get(String distroID) throws Exception {
         switch (distroID) {
             case "Artix":
@@ -15,6 +21,10 @@ public class HowManyPackages {
                 return -1;
             case "Arch":
                 return pacman();
+            case "Devuan":
+                return dpkg();
+            case "Debian":
+                return dpkg();
             default:
                 return -2;
         }

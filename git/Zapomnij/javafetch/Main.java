@@ -38,6 +38,18 @@ public class Main {
                 image = ge.construct_image_vector();
                 color = ge.color;
                 break;
+            case "Arch":
+                Arch ac = new Arch();
+                fullname = ac.getFullName();
+                image = ac.construct_image_vector();
+                color = ac.color;
+                break;
+            case "Devuan":
+                Devuan dv = new Devuan();
+                fullname = dv.getFullName();
+                image = dv.construct_image_vector();
+                color = dv.color;
+                break;
             default:
                 System.err.println("Unknown distro: " + distro);
                 System.exit(1);
