@@ -46,5 +46,10 @@ Average javafetch execution time on my machine: 0.22s
         # if you use sudo
         sudo ./install.sh
 
+## Running the worst fetch
+
+        javafetch
+
+
 ### Some information
 - No additional libraries are needed
