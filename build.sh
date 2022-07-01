@@ -46,8 +46,10 @@ cd $(dirname "${0}")
 
 if [ -z "${DEST}" ]; then
     DEST=out
-    mkdir -p out
 fi
+
+[ -d ${DEST} ] && rm -rf ${DEST}
+mkdir -p ${DEST}
 
 echo "Compiling..."
 for file in $(find $(pwd)/git -name '*.java' -type f); do
