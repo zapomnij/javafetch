@@ -21,18 +21,18 @@ Average javafetch execution time on my machine: 0.22s
 #### Arch/Artix/Manjaro/Endeavour:
 
         # run as root of course
-        pacman -S wmname jdk17-openjdk lsb-release
+        pacman -S wmname jdk17-openjdk
 
 #### Devuan/Debian/Mint/Ubuntu:
 
         # run as root of course
-        apt install openjdk-17-jdk suckless-tools lsb-release
+        apt install openjdk-17-jdk suckless-tools
 
 #### Gentoo Linux:
 
         # run as root of course
         # don't forget to set as many optimizations as you can
-        emerge -a openjdk-bin wmname lsb-release
+        emerge -a openjdk-bin wmname
 
 
 ### To build my worst project type:

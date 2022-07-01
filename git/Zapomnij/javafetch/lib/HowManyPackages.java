@@ -15,15 +15,15 @@ public class HowManyPackages {
 
     public static long get(String distroID) throws Exception {
         switch (distroID) {
-            case "Artix":
+            case "artix":
                 return pacman();
-            case "Gentoo":
+            case "gentoo":
                 return -1;
-            case "Arch":
+            case "arch":
                 return pacman();
-            case "Devuan":
+            case "devuan":
                 return dpkg();
-            case "Debian":
+            case "debian":
                 return dpkg();
             default:
                 return -2;

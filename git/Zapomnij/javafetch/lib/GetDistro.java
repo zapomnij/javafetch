@@ -12,7 +12,7 @@ public class GetDistro {
             {
                 StringBuilder str = new StringBuilder();
 
-                FileReader fd = new FileReader(new File("/etc/lsb-release"));
+                FileReader fd = new FileReader(new File("/etc/os-release"));
                 int buf;
                 while ((buf = fd.read()) != -1) {
                     str.append((char) buf);
@@ -23,8 +23,8 @@ public class GetDistro {
 
             String[] split = allbuf.split("\\s+");
             for (String item : split) {
-                if (item.startsWith("DISTRIB_ID")) {
-                    String[] arr = item.split("\"");
+                if (item.startsWith("ID")) {
+                    String[] arr = item.split("=");
                     distro = arr[1];
                     break;
                 }

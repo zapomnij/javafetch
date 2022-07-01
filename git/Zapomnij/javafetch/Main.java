@@ -26,25 +26,25 @@ public class Main {
         Vector<String> image = new Vector<String>();
 
         switch (distro) {
-            case "Artix":
+            case "artix":
                 Artix at = new Artix();
                 fullname = at.getFullName();
                 image = at.construct_image_vector();
                 color = at.color;
                 break;
-            case "Gentoo":
+            case "gentoo":
                 Gentoo ge = new Gentoo();
                 fullname = ge.getFullName();
                 image = ge.construct_image_vector();
                 color = ge.color;
                 break;
-            case "Arch":
+            case "arch":
                 Arch ac = new Arch();
                 fullname = ac.getFullName();
                 image = ac.construct_image_vector();
                 color = ac.color;
                 break;
-            case "Devuan":
+            case "devuan":
                 Devuan dv = new Devuan();
                 fullname = dv.getFullName();
                 image = dv.construct_image_vector();

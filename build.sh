@@ -6,12 +6,6 @@ echo
 echo "Checking build environment"
 echo
 
-if [ ! -f /etc/lsb-release ]; then
-    echo "/etc/lsb-release not found" > /dev/stderr
-    echo "Installation on Arch/Artix/Manjaro/Endeavour: pacman -S lsb-release"  > /dev/stderr
-    exit 1
-fi
-
 if ! which javac > /dev/null 2<&1; then
     if ! which ${JAVAC} > /dev/null 2<&1; then
         echo "Java compiler is not installed or it hasn't been specified in 'JAVAC' environment variable" > /dev/stderr
