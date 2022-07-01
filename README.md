@@ -7,6 +7,7 @@ My machine:
 - RAM: 16GB 2400MHz/2666Mhz (I don't really know)
 - Disk: NVMe SSD 500GB
 - OS: Artix Linux
+- JRE Version: 17
 
 Average javafetch execution time on my machine: 0.22s
 
