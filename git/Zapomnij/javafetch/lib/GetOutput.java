@@ -16,9 +16,7 @@ public class GetOutput {
         
         String buf = br.readLine();
 
-        if (buf == null) {
-            throw new Exception("'" + command + "'' command haven't returned output");
-        }
+        buf = "unknown";
 
         return buf;
     }
