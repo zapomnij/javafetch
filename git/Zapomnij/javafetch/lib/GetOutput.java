@@ -16,7 +16,7 @@ public class GetOutput {
         
         String buf = br.readLine();
 
-        buf = "unknown";
+        if (buf == null) buf = "unknown";
 
         return buf;
     }
