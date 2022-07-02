@@ -50,9 +50,17 @@ public class Main {
                 image = dv.construct_image_vector();
                 color = dv.color;
                 break;
+            case "fedora":
+                Fedora fe = new Fedora();
+                fullname = fe.getFullName();
+                image = fe.construct_image_vector();
+                color = fe.color;
+                break;
             default:
-                System.err.println("Unknown distro: " + distro);
-                System.exit(1);
+                Generic gen = new Generic();
+                fullname = distro;
+                image = gen.construct_image_vector();
+                color = reset;
                 break;
         }
 

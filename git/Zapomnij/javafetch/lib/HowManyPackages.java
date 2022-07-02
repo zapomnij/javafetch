@@ -13,6 +13,12 @@ public class HowManyPackages {
         return Long.parseLong(output);
     }
 
+    private static long rpm() throws Exception {
+        String output = GetOutput.getOutput("rpm -qa | wc -l");
+
+        return Long.parseLong(output);
+    }
+
     public static long get(String distroID) throws Exception {
         switch (distroID) {
             case "artix":
@@ -25,8 +31,10 @@ public class HowManyPackages {
                 return dpkg();
             case "debian":
                 return dpkg();
+            case "fedora":
+                return rpm();
             default:
-                return -2;
+                return 0;
         }
     }
 }
