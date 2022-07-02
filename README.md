@@ -13,7 +13,10 @@ Average javafetch execution time on my machine: 0.22s
 
 ## Supported platforms
 - Artix Linux
+- Arch Linux
+- Devuan GNU/Linux
 - Gentoo Linux (without package counter)
+- Fedora Linux
 
 ## Building my worst project
 ### Installing my worst project dependencies:
